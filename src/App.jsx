@@ -21,7 +21,7 @@ const App = () => {
   const removeNotes = (id) => {
     const filterNotes = notes.filter((note) => note.id !== id);
     setNotes(filterNotes);
-    localStorage.setItem('notes', JSON.stringify(filterNotes)); // নোট ডেটা localStorage এ স্টোর করুন
+    localStorage.setItem('notes', JSON.stringify(filterNotes));
     toast("✅ Deleted Successfully");
   }
 
